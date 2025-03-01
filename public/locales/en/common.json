@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contactUs": "Contact us"
+  },
+  "services": {
+    "aiDataAnalytics": "AI and Data Analytics",
+    "appsDevelopment": "Apps & Bots Development",
+    "itStaffing": "IT Staffing",
+    "aiConsultancy": "AI Consultancy"
+  },
+  "about": {
+    "partners": "Partners",
+    "careers": "Careers",
+    "events": "Events",
+    "team": "Team"
+  }
+}

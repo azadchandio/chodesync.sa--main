@@ -1,0 +1,148 @@
+/* RTL Support */
+html[dir="rtl"] {
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Header RTL Styles */
+html[dir="rtl"] .desktop-header nav ul {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .desktop-header nav ul li {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+html[dir="rtl"] .dropdown {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .dropdown-content {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .col-md-2,
+html[dir="rtl"] .col-md-8 {
+  float: right;
+}
+
+/* Hero Section RTL */
+html[dir="rtl"] .hero-area {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-area .title {
+  direction: rtl;
+}
+
+/* Features Section RTL */
+html[dir="rtl"] .feature-area {
+  direction: rtl;
+}
+
+html[dir="rtl"] .feature-item {
+  text-align: right;
+}
+
+/* Solutions Section RTL */
+html[dir="rtl"] .solution-area {
+  direction: rtl;
+}
+
+html[dir="rtl"] .solution-item {
+  text-align: right;
+}
+
+html[dir="rtl"] .solution-single {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+html[dir="rtl"] .solution-single img {
+  left: auto;
+  right: 0;
+}
+
+/* FAQ Section RTL */
+html[dir="rtl"] .faq-area {
+  direction: rtl;
+}
+
+html[dir="rtl"] .accordion-button {
+  text-align: right;
+  padding: 20px 24px 20px 48px;
+}
+
+html[dir="rtl"] .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Footer RTL */
+html[dir="rtl"] .footer {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer ul {
+  padding-right: 0;
+}
+
+/* Buttons RTL */
+html[dir="rtl"] .btn {
+  direction: rtl;
+}
+
+html[dir="rtl"] .language-switch-btn {
+  margin-left: 16px;
+  margin-right: 0;
+}
+
+/* RTL Spacing Adjustments */
+html[dir="rtl"] .pl-47 {
+  padding-left: 0;
+  padding-right: 47px;
+}
+
+html[dir="rtl"] .pr-47 {
+  padding-right: 0;
+  padding-left: 47px;
+}
+
+/* RTL Responsive Adjustments */
+@media (max-width: 768px) {
+  html[dir="rtl"] .mobile-menu {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  
+  html[dir="rtl"] .mobile-menu.show-menu {
+    transform: translateX(0);
+  }
+
+  html[dir="rtl"] .mobile-menu ul {
+    padding-right: 0;
+  }
+
+  html[dir="rtl"] .mobile-menu-close-icon {
+    right: auto;
+    left: 20px;
+  }
+}
+
+/* RTL Animations */
+html[dir="rtl"] [data-aos="fade-left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+html[dir="rtl"] [data-aos="fade-right"] {
+  transform: translate3d(100px, 0, 0);
+}

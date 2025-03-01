@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "aboutUs": "من نحن",
+    "contactUs": "اتصل بنا"
+  },
+  "services": {
+    "aiDataAnalytics": "الذكاء الاصطناعي وتحليل البيانات",
+    "appsDevelopment": "تطوير التطبيقات والروبوتات",
+    "itStaffing": "توظيف تقنية المعلومات",
+    "aiConsultancy": "استشارات الذكاء الاصطناعي"
+  },
+  "about": {
+    "partners": "الشركاء",
+    "careers": "الوظائف",
+    "events": "الفعاليات",
+    "team": "الفريق"
+  }
+}

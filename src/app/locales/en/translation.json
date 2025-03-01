@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for your business needs",
+    
+    "ai_analytics": "AI & Data Analytics Solutions",
+    "ai_analytics_desc": "Unlock the power of your data with advanced AI solutions. Our comprehensive analytics services help you make smarter decisions, automate processes, and drive innovation through cutting-edge artificial intelligence and machine learning technologies.",
+    "ai_analytics_f1": "Predictive Analytics",
+    "ai_analytics_f2": "Machine Learning Models",
+    "ai_analytics_f3": "Data Visualization",
+    
+    "ai_analytics_overview_title": "Overview",
+    "ai_analytics_overview_desc": "Our AI & Data Analytics services help businesses harness the power of their data through advanced artificial intelligence and machine learning solutions. We transform raw data into actionable insights that drive strategic decision-making and business growth.",
+    
+    "ai_analytics_benefits_title": "Key Benefits",
+    "ai_analytics_benefits_1_title": "Predictive Analytics",
+    "ai_analytics_benefits_1_desc": "Forecast trends and make data-driven decisions with advanced predictive modeling",
+    "ai_analytics_benefits_2_title": "Process Automation",
+    "ai_analytics_benefits_2_desc": "Streamline operations with intelligent automation powered by AI",
+    "ai_analytics_benefits_3_title": "Real-time Insights",
+    "ai_analytics_benefits_3_desc": "Get instant insights from your data with real-time analytics and monitoring",
+    
+    "ai_analytics_process_title": "Our Process",
+    "ai_analytics_process_1_title": "Data Assessment",
+    "ai_analytics_process_1_desc": "We analyze your current data infrastructure and identify opportunities for improvement",
+    "ai_analytics_process_2_title": "Solution Design",
+    "ai_analytics_process_2_desc": "Our experts design a customized AI solution tailored to your business needs",
+    "ai_analytics_process_3_title": "Implementation & Training",
+    "ai_analytics_process_3_desc": "We implement the solution and provide comprehensive training for your team",
+    
+    "development": "Apps Development",
+    "development_desc": "Custom software solutions tailored to your business requirements",
+    "development_f1": "Web Applications",
+    "development_f2": "Mobile Apps",
+    "development_f3": "Enterprise Software",
+    
+    "staffing": "IT Staffing",
+    "staffing_desc": "Expert IT professionals to strengthen your team",
+    "staffing_f1": "Technical Recruitment",
+    "staffing_f2": "Team Augmentation",
+    "staffing_f3": "Skill Assessment",
+    
+    "consultancy": "AI Consultancy",
+    "consultancy_desc": "Strategic guidance for AI implementation and digital transformation",
+    "consultancy_f1": "AI Strategy",
+    "consultancy_f2": "Process Optimization",
+    "consultancy_f3": "Technology Assessment"
+  },
+  "about": {
+    "company": "About Company",
+    "team": "Our Team",
+    "careers": "Careers",
+    "events": "Events"
+  }
+}
