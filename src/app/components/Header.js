@@ -5,6 +5,7 @@ import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function Header() {
   const searchIconRef = useRef(null);
   const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18n.language || 'en');
+  const { startTransition } = useLanguage();
 
   useEffect(() => {
     // Set initial language and direction
@@ -30,14 +32,16 @@ export default function Header() {
   };
 
   const toggleLanguage = () => {
+    startTransition();
     const newLang = currentLang === 'en' ? 'ar' : 'en';
-    setCurrentLang(newLang);
-    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = newLang;
-    i18n.changeLanguage(newLang);
     
-    // Force a reload to ensure all translations are applied
-    window.location.reload();
+    // Wait for fade out
+    setTimeout(() => {
+      setCurrentLang(newLang);
+      document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.lang = newLang;
+      i18n.changeLanguage(newLang);
+    }, 150); // Half of transition time for smooth crossfade
   };
 
   useEffect(() => {

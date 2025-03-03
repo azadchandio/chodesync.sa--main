@@ -146,3 +146,28 @@ html[dir="rtl"] [data-aos="fade-left"] {
 html[dir="rtl"] [data-aos="fade-right"] {
   transform: translate3d(100px, 0, 0);
 }
+
+/* Language Transition Styles */
+body {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-transition {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-transition.switching {
+  opacity: 0;
+}
+
+/* Smooth transition for text direction changes */
+.content-wrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth font transition */
+html[dir="ltr"] *,
+html[dir="rtl"] * {
+  transition: font-family 0.3s ease-in-out;
+}

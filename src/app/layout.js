@@ -5,6 +5,7 @@ import './styles.css';
 import './styles/rtl.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -28,9 +29,11 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={manrope.className}>
-        <Header />
-        <main> {children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main> {children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

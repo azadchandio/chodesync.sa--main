@@ -1,7 +1,5 @@
 {
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js",
-  "/services/ai-analytics/page": "app/services/ai-analytics/page.js",
-  "/about/page": "app/about/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/not-found": "app/not-found.js"
 }
