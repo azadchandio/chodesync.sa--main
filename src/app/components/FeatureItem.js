@@ -10,7 +10,7 @@ export default function FeatureItem({ img, featureKey }) {
 
   return (
     <div
-      className='col-md-6'
+      className='col-md-4'
       data-aos='fade-up'
       data-aos-duration='1000'
       data-aos-delay='100'

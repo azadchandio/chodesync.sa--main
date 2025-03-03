@@ -539,6 +539,7 @@ header nav ul li a:hover {
     rgba(141, 141, 185, 0.16) 0%,
     rgba(8, 8, 12, 0) 100%
   );
+  height: 100%; /* Ensure all cards are equal in height */
   border: 1px solid #28263f;
   padding: 31px;
 }
