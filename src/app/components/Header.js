@@ -13,13 +13,14 @@ export default function Header() {
   const searchBarRef = useRef(null);
   const searchIconRef = useRef(null);
   const { t, i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState(i18n.language || 'en');
+  const [currentLang, setCurrentLang] = useState('en'); // Changed default to 'en'
   const { startTransition } = useLanguage();
 
   useEffect(() => {
-    // Set initial language and direction
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = currentLang;
+    // Set initial language and direction on component mount
+    document.documentElement.dir = 'ltr'; // Changed to 'ltr' for English
+    document.documentElement.lang = 'en'; // Changed to 'en' for English
+    i18n.changeLanguage('en'); // Changed to 'en' for English
   }, []);
 
   const toggleMobileMenu = () => {
@@ -41,7 +42,7 @@ export default function Header() {
       document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
       document.documentElement.lang = newLang;
       i18n.changeLanguage(newLang);
-    }, 150); // Half of transition time for smooth crossfade
+    }, 150);
   };
 
   useEffect(() => {
@@ -234,7 +235,7 @@ export default function Header() {
                 </Link>
               </div>
               <li>
-                <Link href="/pricing">{t('nav.contactUs')}</Link>
+                <Link href="/contact">{t('nav.contactUs')}</Link> {/* Fixed link from /pricing to /contact */}
               </li>
             </ul>
           </nav>

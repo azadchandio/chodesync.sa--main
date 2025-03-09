@@ -1,8 +1,5 @@
 {
   "/services/page": "app/services/page.js",
-  "/examples/page": "app/examples/page.js",
-  "/services/ai-analytics/page": "app/services/ai-analytics/page.js",
-  "/services/staffing/page": "app/services/staffing/page.js",
-  "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js"
 }
