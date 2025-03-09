@@ -1,9 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PageHero from '../components/PageHero';
+import ServiceItem from '../components/ServiceItem';
+import Brand from '../components/Brand';
 import '../i18n';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -55,31 +59,63 @@ export default function Services() {
     }
   ];
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+      disable: window.innerWidth < 768,
+    });
+  }, []);
+
   return (
-    
-    <div className="">
-       <PageHero
-        subtitle={t('servicesPage.title')}
-        content={t('servicesPage.subtitle')}
+    <>
+      <div className='percentage-bar'></div>
+      <PageHero
+        title='Effortless'
+        subtitle='Integrations & Services'
+        content='Easily connect tools, databases, or import files with just a few
+              clicks. Assistify seamlessly integrates with various platforms and
+              file formats, ensuring a smooth experience. Additionally, explore our comprehensive services tailored to your needs.'
       />
-      <div className="container">
-        <div className="services-grid">
-          {services.map((service) => (
-            <div key={service.id} className="service-card">
-              <div className="service-icon">
-                <img src={service.icon} alt={service.title} />
+      <div className='services-area section-padding'>
+        <div className='container'>
+          <div data-aos='fade-up' data-aos-duration='1000'>
+            <div className='row'>
+              <div className='col-md-12'>
+                <div className='section-title text-center'>
+                  <h2 className='title-2'>
+                    Our <span>Services</span>
+                  </h2>
+                  <p className='section-description'>
+                    Comprehensive solutions tailored to your needs
+                  </p>
+                </div>
               </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul className="service-features">
-                {service.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
             </div>
-          ))}
+            <div className='row gy-4'>
+              {services.map((service) => (
+                <ServiceItem key={service.id} service={service} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div className='feature-area mt-192'>
+        <div className='container'>
+          <div data-aos='fade-up' data-aos-duration='1000'>
+            <div className='row'>
+              <div className='col-md-12'>
+                <h2 className='title-2'>
+                  Elevate Your Productivity <span>to New Heights</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='mtb-192'>
+        <Brand />
+      </div>
+    </>
   );
 }
